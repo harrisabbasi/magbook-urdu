@@ -1,0 +1,332 @@
+/*
+Theme Name:   Magbook Child Theme
+Theme URI:    
+Description:  A MAgbook Child theme 
+Author:       Harris
+Author URI:   
+Template:     magbook
+Version:      1.0.0
+Text Domain:  twentytwentyonechild
+*/
+
+.container-one{
+	width: 66.66%;
+	float:left;
+	box-sizing: border-box;
+}
+
+.post-one{
+	width: 62.5%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.post-three{
+	width: 60%;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.clear{
+	clear:both;
+}
+
+.post-two{
+	width: 37.5%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.post-four{
+	width: 40%;
+	box-sizing: border-box;
+}
+
+
+.container-2{
+	width:33.34%;
+	float:right;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.container-four{
+	width:33.34%;
+	float:right;
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+.container-three{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.post-half{
+	width:47.5%;
+}
+
+.post-quarter{
+	width: 21.25%;
+}
+
+.video-one{
+	width:65%;
+}
+
+.video-two{
+	width:30%;
+}
+
+.box{
+	padding-top: 10px;
+}
+
+.box span{
+	float: left;
+    line-height: 40px;
+    font-size: 40px;
+    padding: 5px;
+    width: 20%;
+}
+
+.box .entry-title{
+	float: left;
+    width: 80%;
+}
+
+.entry-meta .avatar{
+	float: left;
+	margin-right: 10px;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.flex-container article{
+	width: 22.5%;
+}
+
+.category-title{
+	text-align: center;
+}
+
+/*Text infront of image styling*/
+.image-text article{
+	position: relative;
+	color: #fff;
+	overflow: hidden;
+	margin-bottom:10px;
+}
+
+.image-text .entry-title a{
+	color:#fff;
+}
+
+.image-text figure{
+	opacity: 0.8;
+}
+
+.image-text .cat-info{
+	position: absolute;
+	bottom: 90px;
+	right: 5%;
+	width: 90%;
+	text-align: right;
+}
+
+.image-text .cat-box-text{
+	position: absolute;
+	bottom: 50px;
+	transform: translateY(50%);
+	right: 5%;
+	width: 90%;
+	text-align: right;
+}
+
+/*Text infront of image styling ends*/
+
+.more-like-this .mb-title a{
+	font-size: 22px;
+}
+
+/*Styling trending second section*/
+
+.single-post .wpp-list{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.single-post .wpp-list li{
+	width:22.5%;
+}
+
+.single-post .wpp-list .box span{
+	display: none;
+}
+
+/*End Trending Section*/
+
+/*Three Tabs Styling*/
+.tabs-container .mb-popular .has-post-thumbnail .mb-content, .category-one .mb-popular .has-post-thumbnail .mb-content {
+    width: calc(100% - 95px);
+    position: absolute;
+    margin-right: 95px;
+    text-align: right;
+}
+
+.tabs-container .category-text, .category-one .category-text{
+	margin:0;
+}
+
+.tabs-container .mb-popular .mb-post, .category-one .mb-popular .mb-post {
+    
+     margin-bottom: 0px; 
+    
+     border-bottom: 0px; 
+     padding-bottom: 0px; 
+ }
+
+ .mb-popular .mb-featured-image {
+    float: right;
+    width: calc(45% - 15px);
+     margin-right: 0px; 
+    
+}
+
+.mb-popular .mb-featured-image img{
+	float:right;
+}
+
+ .front-page .wpp-list .entry-title{
+ 	font-size:16px;
+ }
+
+/* Alligning category one with top content*/
+
+.category-one{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.post-four article{
+	margin-bottom: 15px;
+}
+
+.subcategory{
+	width:22.5%;
+}
+
+.single-opinion-post .entry-header img{
+	margin-right: 15px;
+}
+
+.single-opinion-post .entry-header .cat-name{
+	margin-right: 15px;
+}
+
+/*Urdu Styling*/
+
+.main-navigation {
+    float: right;
+    margin-right: 0px; 
+}
+
+.header-search, .header-search-x{
+	right: calc(100% - 150px);
+	bottom: 5px;
+}
+
+#search-box {
+	right: calc(100% - 450px);
+}
+
+.show-menu-toggle {
+	right: calc(100% - 50px);
+
+}
+
+/*Front Page Mobile Responsiveness*/
+
+@media (max-width: 767px){
+	.front-page .wpp-list li, .category-general .wpp-list li{
+		clear:none;
+		float: left;
+		width: calc(50% - 10px);
+	}
+
+	.front-page .wpp-list li:nth-child(odd), .category-general .wpp-list li:nth-child(odd){
+		margin-right:20px;
+	}
+
+	.front-page .wpp-list:after, .category-general .wpp-list:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.category-one .container-one,.category-one .post-one, .category-one .post-two, .category-one .container-2{
+		width: 100%;
+	}
+
+	.category-one .container-2{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.category-one .post-two article{
+		float:left;
+		width:calc(50% - 10px);
+	}
+
+	.category-one .post-two article:nth-child(1){
+		margin-right:20px;
+	}
+
+	.category-one .post-two:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.category-two .post-half{
+		width: 100%;
+	}
+
+	.category-two .post-quarter{
+		width: 47.5%;
+	}
+
+	.videos .video-one, .videos .video-two{
+		width: 100%;
+	}
+
+	.flex-container .subcategory{
+		width: 47.5%;
+	}
+
+	/*Category General Page Mobile Responsiveness*/
+
+	.category-four .container-one, .category-four .container-four{
+		width: 100%;
+	}
+
+	.single-post .wpp-list li{
+		width:47.5%;
+	}
+
+	.single-post .flex-container article{
+		width: 47.5%;
+	}
+
+}
+
