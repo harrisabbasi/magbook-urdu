@@ -87,7 +87,7 @@ Text Domain:  twentytwentyonechild
 }
 
 .box span{
-	float: left;
+	float: right;
     line-height: 40px;
     font-size: 40px;
     padding: 5px;
@@ -95,7 +95,7 @@ Text Domain:  twentytwentyonechild
 }
 
 .box .entry-title{
-	float: left;
+	float: right;
     width: 80%;
 }
 
@@ -253,6 +253,10 @@ Text Domain:  twentytwentyonechild
 .show-menu-toggle {
 	right: calc(100% - 50px);
 
+}
+
+.wpp-list{
+	text-align: right;
 }
 
 /*Front Page Mobile Responsiveness*/

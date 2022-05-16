@@ -134,7 +134,26 @@ function my_custom_popular_posts_html_list($popular_posts, $instance) {
         // Date option checked
         if ( $instance['stats_tag']['date']['active'] ) {
             $date = human_time_diff(strtotime($popular_post->date), current_time('timestamp'));
-            $stats[] = '<span class="wpp-date">' . sprintf(__('%s ago', 'wordpress-popular-posts'), $date) . '</span>';
+            $time = explode(" ", $date);
+            if ($time[1] == "years" || $time[1] == "year"){
+                $time = $time[0] .' ' . 'سال پہلے';
+            }
+            if ($time[1] == "seconds" || $time[1] == "second"){
+                $time = $time[0] .' ' . 'سیکنڈ پہلے';
+            }
+            if ($time[1] == "minutes" || $time[1] == "minute"){
+                $time = $time[0] .' ' . 'منٹ پہلے';
+            }
+            if ($time[1] == "hour" || $time[1] == "hours"){
+                $time = $time[0] .' ' . 'گھنٹے پہلے';
+            }
+            if ($time[1] == "week" || $time[1] == "weeks"){
+                $time = $time[0] .' ' . 'ہفتے پہلے';
+            }
+            if ($time[1] == "month" || $time[1] == "months"){
+                $time = $time[0] .' ' . 'مہینے پہلے';
+            }
+            $stats[] = '<span class="wpp-date">' . sprintf(__('%s', 'wordpress-popular-posts'), $time) . '</span>';
         }
 
         // Build stats tag
