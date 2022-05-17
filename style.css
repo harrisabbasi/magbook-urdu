@@ -11,7 +11,7 @@ Text Domain:  twentytwentyonechild
 
 .container-one{
 	width: 66.66%;
-	float:left;
+	float:right;
 	box-sizing: border-box;
 }
 
@@ -24,8 +24,9 @@ Text Domain:  twentytwentyonechild
 
 .post-three{
 	width: 60%;
-	padding-right: 30px;
+	padding-left: 30px;
 	box-sizing: border-box;
+	float: right!important;
 }
 
 .clear{
@@ -42,6 +43,7 @@ Text Domain:  twentytwentyonechild
 .post-four{
 	width: 40%;
 	box-sizing: border-box;
+	text-align: right;
 }
 
 
@@ -50,6 +52,11 @@ Text Domain:  twentytwentyonechild
 	float:right;
 	box-sizing: border-box;
 	padding-left: 30px;
+}
+
+.shortcode-four .container-2{
+	padding-left: 0px;
+	padding-right: 30px;
 }
 
 .container-four{
@@ -62,6 +69,7 @@ Text Domain:  twentytwentyonechild
 .container-three{
 	display: flex;
 	flex-wrap: wrap;
+	text-align: right;
     justify-content: space-between;
 
 }
@@ -153,9 +161,16 @@ Text Domain:  twentytwentyonechild
 }
 
 /*Text infront of image styling ends*/
-
+.more-like-this{
+	text-align: right;
+}
 .more-like-this .mb-title a{
 	font-size: 22px;
+}
+
+.more-like-this  .has-post-thumbnail .mb-content {
+    
+    padding-right: 30px;
 }
 
 /*Styling trending second section*/
@@ -191,7 +206,7 @@ Text Domain:  twentytwentyonechild
 .tabs-container .mb-popular .mb-post, .category-one .mb-popular .mb-post {
     
      margin-bottom: 0px; 
-    
+     position: relative;
      border-bottom: 0px; 
      padding-bottom: 0px; 
  }
