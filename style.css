@@ -107,9 +107,9 @@ Text Domain:  twentytwentyonechild
     width: 80%;
 }
 
-.entry-meta .avatar{
-	float: left;
-	margin-right: 10px;
+.entry-meta .avatar {
+    float: right;
+    margin-left: 10px;
 }
 
 .flex-container{
@@ -274,6 +274,28 @@ Text Domain:  twentytwentyonechild
 	text-align: right;
 }
 
+/*Category page urdu styling*/
+.category-four{
+	text-align: right;
+}
+.category-four .mb-popular .has-post-thumbnail .mb-content {
+    float: left;
+}
+
+/*Single page urdu styling*/
+
+.single-post-container{
+	text-align: right;
+}
+.single-post .post-featured-image{
+	text-align: right;
+}
+
+.single-post .entry-meta span {
+    float:right;
+    margin-left: 15px;
+    
+}
 /*Front Page Mobile Responsiveness*/
 
 @media (max-width: 767px){

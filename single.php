@@ -22,7 +22,7 @@ $magbook_settings = magbook_get_theme_options();
 $magbook_display_page_single_featured_image = $magbook_settings['magbook_display_page_single_featured_image']; ?>
 <div class="wrap single-post">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-9 single-post-container">
 			<main id="main" class="site-main" role="main">
 			<?php global $magbook_settings;
 			while( have_posts() ) {
@@ -98,10 +98,10 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 							) );
 				} elseif ( is_singular( 'post' ) ) {
 				the_post_navigation( array(
-						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'magbook' ) . '</span> ' .
+						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'اگلے', 'magbook' ) . '</span> ' .
 							'<span class="screen-reader-text">' . __( 'Next post:', 'magbook' ) . '</span> ' .
 							'<span class="post-title">%title</span>',
-						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'magbook' ) . '</span> ' .
+						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'پچھلے', 'magbook' ) . '</span> ' .
 							'<span class="screen-reader-text">' . __( 'Previous post:', 'magbook' ) . '</span> ' .
 							'<span class="post-title">%title</span>',
 					) );
