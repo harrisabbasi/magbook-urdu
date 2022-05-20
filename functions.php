@@ -571,8 +571,27 @@ function shortcode_three( $atts = [], $content = null, $tag = '' ) {
                     <?php }
                         $cats = get_the_category(get_the_ID());
                         $human_time = human_time_diff(get_the_time('U'), current_time ('timestamp'));
+                        $time = explode(" ", $human_time);
+                        if ($time[1] == "years" || $time[1] == "year"){
+                            $time = $time[0] .' ' . 'سال پہلے';
+                        }
+                        if ($time[1] == "seconds" || $time[1] == "second"){
+                            $time = $time[0] .' ' . 'سیکنڈ پہلے';
+                        }
+                        if ($time[1] == "minutes" || $time[1] == "minute"){
+                            $time = $time[0] .' ' . 'منٹ پہلے';
+                        }
+                        if ($time[1] == "hour" || $time[1] == "hours"){
+                            $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "week" || $time[1] == "weeks"){
+                            $time = $time[0] .' ' . 'ہفتے پہلے';
+                        }
+                        if ($time[1] == "month" || $time[1] == "months"){
+                            $time = $time[0] .' ' . 'مہینے پہلے';
+                        }
                         ?>
-                        <p class="cat-info"><?php echo $cats[0]->name. ' / '.$human_time ?></p>
+                        <p class="cat-info"><?php echo $cats[0]->name. ' / '.$time ?></p>
                         <div class="cat-box-text">
                             <header class="entry-header">
                                 <h2 class="entry-title">
@@ -600,8 +619,27 @@ function shortcode_three( $atts = [], $content = null, $tag = '' ) {
                         <?php
                         $cats = get_the_category(get_the_ID());
                         $human_time = human_time_diff(get_the_time('U'), current_time ('timestamp'));
+                        $time = explode(" ", $human_time);
+                        if ($time[1] == "years" || $time[1] == "year"){
+                            $time = $time[0] .' ' . 'سال پہلے';
+                        }
+                        if ($time[1] == "seconds" || $time[1] == "second"){
+                            $time = $time[0] .' ' . 'سیکنڈ پہلے';
+                        }
+                        if ($time[1] == "minutes" || $time[1] == "minute"){
+                            $time = $time[0] .' ' . 'منٹ پہلے';
+                        }
+                        if ($time[1] == "hour" || $time[1] == "hours"){
+                            $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "week" || $time[1] == "weeks"){
+                            $time = $time[0] .' ' . 'ہفتے پہلے';
+                        }
+                        if ($time[1] == "month" || $time[1] == "months"){
+                            $time = $time[0] .' ' . 'مہینے پہلے';
+                        }
                         ?>
-                        <p><?php echo $cats[0]->name. ' / '.$human_time ?></p>
+                        <p><?php echo $cats[0]->name. ' / '.$time ?></p>
 
                         <?php the_title( sprintf( '<h3 class="mb-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
                         
@@ -1003,7 +1041,7 @@ function shortcode_seven( $atts = [], $content = null, $tag = '' ) {
     
 
     
-    $args = array('parent' => 42, 'hide_empty'  => false);
+    $args = array('parent' => 27, 'hide_empty'  => false);
     $subcategories = get_categories($args);
     
     ?>

@@ -84,10 +84,12 @@ Text Domain:  twentytwentyonechild
 
 .video-one{
 	width:65%;
+	float: right!important;
 }
 
 .video-two{
 	width:30%;
+	padding-right: 30px;
 }
 
 .box{
@@ -231,6 +233,7 @@ Text Domain:  twentytwentyonechild
 .category-one{
 	margin-left: -15px;
 	margin-right: -15px;
+	text-align: right;
 }
 
 .post-four article{
@@ -295,6 +298,16 @@ Text Domain:  twentytwentyonechild
     float:right;
     margin-left: 15px;
     
+}
+
+/*Videos Urdu styling*/
+
+.videos{
+	text-align: right;
+}
+
+.videos .mb-popular .has-post-thumbnail .mb-content {
+    float: left;
 }
 /*Front Page Mobile Responsiveness*/
 
