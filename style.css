@@ -281,6 +281,10 @@ Text Domain:  twentytwentyonechild
     float: left;
 }
 
+.archive-header{
+	text-align: right;
+}
+
 /*Single page urdu styling*/
 
 .single-post-container{
