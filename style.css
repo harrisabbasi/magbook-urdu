@@ -109,7 +109,7 @@ Text Domain:  twentytwentyonechild
     width: 80%;
 }
 
-.entry-meta .avatar {
+.entry-meta img{
     float: right;
     margin-left: 10px;
 }
@@ -242,10 +242,6 @@ Text Domain:  twentytwentyonechild
 
 .subcategory{
 	width:22.5%;
-}
-
-.single-opinion-post .entry-header img{
-	margin-right: 15px;
 }
 
 .single-opinion-post .entry-header .cat-name{

@@ -120,6 +120,9 @@ class Three_tabs extends WP_Widget {
 										if ($time[1] == "hour" || $time[1] == "hours"){
 											$time = $time[0] .' ' . 'گھنٹے پہلے';
 										}
+										if ($time[1] == "day" || $time[1] == "days"){
+											$time = $time[0] .' ' . 'دن پہلے';
+										}
 										if ($time[1] == "week" || $time[1] == "weeks"){
 											$time = $time[0] .' ' . 'ہفتے پہلے';
 										}
@@ -185,6 +188,9 @@ class Three_tabs extends WP_Widget {
 										if ($time[1] == "hour" || $time[1] == "hours"){
 											$time = $time[0] .' ' . 'گھنٹے پہلے';
 										}
+										if ($time[1] == "day" || $time[1] == "days"){
+											$time = $time[0] .' ' . 'دن پہلے';
+										}
 										if ($time[1] == "week" || $time[1] == "weeks"){
 											$time = $time[0] .' ' . 'ہفتے پہلے';
 										}
@@ -209,7 +215,7 @@ class Three_tabs extends WP_Widget {
 					<div class="mb-popular tab-latest">
 						<?php 
 							$categories=get_categories(
-							    array( 'parent' => 42 )
+							    array( 'parent' => 27 )
 							);
 							$cat_array = array();
 							foreach ($categories as $cat) {
@@ -250,6 +256,9 @@ class Three_tabs extends WP_Widget {
 										}
 										if ($time[1] == "hour" || $time[1] == "hours"){
 											$time = $time[0] .' ' . 'گھنٹے پہلے';
+										}
+										if ($time[1] == "day" || $time[1] == "days"){
+											$time = $time[0] .' ' . 'دن پہلے';
 										}
 										if ($time[1] == "week" || $time[1] == "weeks"){
 											$time = $time[0] .' ' . 'ہفتے پہلے';

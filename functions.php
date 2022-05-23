@@ -147,6 +147,9 @@ function my_custom_popular_posts_html_list($popular_posts, $instance) {
             if ($time[1] == "hour" || $time[1] == "hours"){
                 $time = $time[0] .' ' . 'گھنٹے پہلے';
             }
+            if ($time[1] == "day" || $time[1] == "days"){
+                $time = $time[0] .' ' . 'دن پہلے';
+            }
             if ($time[1] == "week" || $time[1] == "weeks"){
                 $time = $time[0] .' ' . 'ہفتے پہلے';
             }
@@ -252,6 +255,9 @@ function shortcode_one( $atts = [], $content = null, $tag = '' ) {
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
                         }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
+                        }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
                         }
@@ -300,6 +306,9 @@ function shortcode_one( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -350,6 +359,9 @@ function shortcode_one( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -439,6 +451,9 @@ function shortcode_two( $atts = [], $content = null, $tag = '' ) {
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
                         }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
+                        }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
                         }
@@ -487,6 +502,9 @@ function shortcode_two( $atts = [], $content = null, $tag = '' ) {
                             }
                             if ($time[1] == "hour" || $time[1] == "hours"){
                                 $time = $time[0] .' ' . 'گھنٹے پہلے';
+                            }
+                            if ($time[1] == "day" || $time[1] == "days"){
+                                $time = $time[0] .' ' . 'دن پہلے';
                             }
                             if ($time[1] == "week" || $time[1] == "weeks"){
                                 $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -584,6 +602,9 @@ function shortcode_three( $atts = [], $content = null, $tag = '' ) {
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
                         }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
+                        }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
                         }
@@ -631,6 +652,9 @@ function shortcode_three( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -719,6 +743,9 @@ function shortcode_four( $atts = [], $content = null, $tag = '' ) {
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
                         }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
+                        }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
                         }
@@ -767,6 +794,9 @@ function shortcode_four( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -817,6 +847,9 @@ function shortcode_four( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -903,6 +936,9 @@ function shortcode_five( $atts = [], $content = null, $tag = '' ) {
                     if ($time[1] == "hour" || $time[1] == "hours"){
                         $time = $time[0] .' ' . 'گھنٹے پہلے';
                     }
+                    if ($time[1] == "day" || $time[1] == "days"){
+                        $time = $time[0] .' ' . 'دن پہلے';
+                    }
                     if ($time[1] == "week" || $time[1] == "weeks"){
                         $time = $time[0] .' ' . 'ہفتے پہلے';
                     }
@@ -950,6 +986,9 @@ function shortcode_five( $atts = [], $content = null, $tag = '' ) {
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
                         }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
+                        }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
                         }
@@ -992,6 +1031,9 @@ function shortcode_five( $atts = [], $content = null, $tag = '' ) {
                         }
                         if ($time[1] == "hour" || $time[1] == "hours"){
                             $time = $time[0] .' ' . 'گھنٹے پہلے';
+                        }
+                        if ($time[1] == "day" || $time[1] == "days"){
+                            $time = $time[0] .' ' . 'دن پہلے';
                         }
                         if ($time[1] == "week" || $time[1] == "weeks"){
                             $time = $time[0] .' ' . 'ہفتے پہلے';
@@ -1123,6 +1165,9 @@ function shortcode_six( $atts = [], $content = null, $tag = '' ) {
                     if ($time[1] == "hour" || $time[1] == "hours"){
                         $time = $time[0] .' ' . 'گھنٹے پہلے';
                     }
+                    if ($time[1] == "day" || $time[1] == "days"){
+                        $time = $time[0] .' ' . 'دن پہلے';
+                    }
                     if ($time[1] == "week" || $time[1] == "weeks"){
                         $time = $time[0] .' ' . 'ہفتے پہلے';
                     }
@@ -1223,6 +1268,9 @@ function magbook_ajax_more_post_ajax() {
                     }
                     if ($time[1] == "hour" || $time[1] == "hours"){
                         $time = $time[0] .' ' . 'گھنٹے پہلے';
+                    }
+                    if ($time[1] == "day" || $time[1] == "days"){
+                        $time = $time[0] .' ' . 'دن پہلے';
                     }
                     if ($time[1] == "week" || $time[1] == "weeks"){
                         $time = $time[0] .' ' . 'ہفتے پہلے';
