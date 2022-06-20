@@ -309,6 +309,14 @@ Text Domain:  twentytwentyonechild
 .videos .mb-popular .has-post-thumbnail .mb-content {
     float: left;
 }
+
+.videos-2{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
 /*Front Page Mobile Responsiveness*/
 
 @media (max-width: 767px){

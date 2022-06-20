@@ -68,9 +68,11 @@ wp_head(); ?>
 									) );
 								?>
 							</nav> <!-- end .top-bar-menu -->
-							<?php }
+							<?php } ?>
 
-							if($magbook_settings['magbook_top_social_icons'] == 0):
+							<a class="btn btn-primary float-left" href="<?php echo chop(get_site_url(), '/urdu') ?>">English</a>
+
+							<?php if($magbook_settings['magbook_top_social_icons'] == 0):
 								echo '<div class="header-social-block">';
 									do_action('magbook_social_links');
 								echo '</div>'.'<!-- end .header-social-block -->';
